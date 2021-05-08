@@ -27,7 +27,7 @@
   <form action="{{ route('delete',$comment->id) }}" method="POST" class="other_comment">
   @csrf
     <div class="text-form">
-      <div class="textarea" name="comment">{{ $comment->comment }}</div><!-- $value['comment']を表示 -->
+      <div class="textarea" name="comment">{{ $comment->comment }}</div>
       <input type="hidden"  name="delete" value="">
       <input class="btn-submit" type="submit" name="delete_send" value="コメントを消す">
     </div>
