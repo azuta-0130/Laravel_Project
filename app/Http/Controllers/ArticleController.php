@@ -29,15 +29,9 @@ class ArticleController extends Controller //LaravelのControllerをArticleContr
 
     public function showDetail($id)
     {
-    //resoucesにarticlesディレクトリがあればその中身を開き
-    //indexがつくファイルがあれば返す
+
     $article = Article::find($id);
     $comments = Comment::all();
-
-    // if (is_null($article)) {
-    //     \Session::flash('err_msg','データがありません。');
-    //     return redirect(route('Articles'));
-    // }
 
     return view('comments.detail', ['article' => $article,'comments' => $comments]); 
     }

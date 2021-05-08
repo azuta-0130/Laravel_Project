@@ -29,8 +29,8 @@
     @foreach($articles as $article)
   <section id="comment">
     <div class="comment-in">
-      <h3>{{ $article->title  }}</h3> <!--$valueに入った['title']を表示 -->
-      <p>{{ $article->text  }}</p>  <!--$valueに入った['text']を表示 -->
+      <h3>{{ $article->title  }}</h3>
+      <p>{{ $article->text  }}</p>
       <p><a href="/article/{{ $article->id }}">記事全文・コメントを見る</a></p>
     </div>
   </section>
